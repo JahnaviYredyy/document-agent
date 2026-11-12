@@ -1,0 +1,21 @@
+[project]
+name = "document-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Jahnavi" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "numpy>=2.5.4",
+    "pandas>=3.1.1",
+    "pypdf>=7.0.1",
+]
+
+[project.scripts]  #the command line entry point..Calls the main function which lives in __init.py__
+docagent = "document_agent.cli:main"
+
+[build-system]   #How the project is packaged
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
