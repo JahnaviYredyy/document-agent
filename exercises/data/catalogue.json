@@ -1,0 +1,24 @@
+[
+    {
+        "id": "a74a8a5a-9d73-4fb5-9000-14103fd4b3f4",
+        "original_name": "company_policy.txt",
+        "file_type": "txt",
+        "sha256": "abc1123",
+        "size_bytes": 2500,
+        "stored_path": "data/storage/company_policy.txt",
+        "status": "imported",
+        "imported_at": "2026-11-13T05:03:08.638405+00:00",
+        "page_count": null
+    },
+    {
+        "id": "86b46ae6-f490-4cfd-9cb0-72de7bfa784f",
+        "original_name": "company_policy.txt",
+        "file_type": "txt",
+        "sha256": "abc1123",
+        "size_bytes": 2500,
+        "stored_path": "data/storage/company_policy.txt",
+        "status": "imported",
+        "imported_at": "2026-11-13T05:04:27.189607+00:00",
+        "page_count": null
+    }
+]

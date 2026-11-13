@@ -31,5 +31,27 @@
         "status": "imported",
         "imported_at": "2026-11-12T11:15:33.842630+00:00",
         "page_count": null
+    },
+    {
+        "id": "6ac32d0d-7193-4940-b4fb-a6473f7ddc20",
+        "original_name": "company_policy.txt",
+        "file_type": "txt",
+        "sha256": "67a9ed575ee87a5c74256f91b7401f946b4eb890b511008ce2a3f4aeb8470919",
+        "size_bytes": 161,
+        "stored_path": "C:\\Users\\jahna\\OneDrive\\Desktop\\Document agent\\document-agent\\data\\storage\\67a9ed575ee87a5c74256f91b7401f946b4eb890b511008ce2a3f4aeb8470919_company_policy.txt",
+        "status": "imported",
+        "imported_at": "2026-11-13T06:24:30.698239+00:00",
+        "page_count": null
+    },
+    {
+        "id": "21b5d923-c49a-4cca-9dc5-b38d050b14c7",
+        "original_name": "meeting_notes.md",
+        "file_type": "md",
+        "sha256": "3a991cbd6a55e39111e78fd2e04b59911fafbcd0e5c4c696a64c7cbde8600b56",
+        "size_bytes": 143,
+        "stored_path": "C:\\Users\\jahna\\OneDrive\\Desktop\\Document agent\\document-agent\\data\\storage\\3a991cbd6a55e39111e78fd2e04b59911fafbcd0e5c4c696a64c7cbde8600b56_meeting_notes.md",
+        "status": "imported",
+        "imported_at": "2026-11-13T06:24:30.710865+00:00",
+        "page_count": null
     }
 ]
