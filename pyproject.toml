@@ -1,7 +1,9 @@
 [project]
 name = "document-agent"
 version = "0.1.0"
-description = "Add your description here"
+description = "A Python-based document management tool for 
+               importing, storing, organizing, and inspecting documents 
+               through a command-line interface."
 readme = "README.md"
 authors = [
     { name = "Jahnavi" }
