@@ -1,20 +1,20 @@
-# Document Agent
+# Python Document Manager
 
-## Project Overview
+A command-line document management application built with Python. It allows users to import, store, list, and inspect documents in different formats while maintaining a persistent document catalogue and detecting duplicate files using SHA-256 hashing.
 
-Document Agent is a Python-based command-line application designed to manage documents from a local folder.
+## Features
 
-The application will allow users to import documents, view the list of imported documents, and inspect individual documents through terminal commands.
-
-This project is being developed as part of the Python Foundations and Document Tools assignment.
-
-## Technologies Used
-
-- **Python 3.13** – Main programming language
-- **uv** – Python project and dependency management
-- **argparse** – Command-line argument parsing
-- **dataclasses** – Structured representation of document information
-- **pathlib** – File and directory path handling
+- **Document Import:** Import supported documents from a specified folder.
+- **Supported Formats:** TXT, Markdown (MD), CSV, and PDF files.
+- **Document Storage:** Copies imported documents into managed storage while preserving the original files.
+- **Duplicate Detection:** Uses SHA-256 hashing to identify duplicate file contents.
+- **Document Catalogue:** Stores document metadata in a JSON catalogue.
+- **Document Listing:** Displays imported documents with their IDs, filenames, types, sizes, and statuses.
+- **Document Inspection:** Displays document metadata and content previews.
+- **CSV Processing:** Reads CSV files, preserves leading zeros, handles missing values, and validates malformed rows.
+- **PDF Processing:** Extracts text, counts pages, and identifies pages without extractable text.
+- **Error Handling:** Handles individual file import failures without stopping the entire batch.
+- **Image-only PDF Detection:** Identifies PDFs without extractable text and indicates when OCR may be needed.
 
 ## Project Structure
 
@@ -25,111 +25,169 @@ document-agent/
 │   └── document_agent/
 │       ├── __init__.py
 │       ├── cli.py
-│       └── models.py
+│       ├── models.py
+│       ├── catalogue.py
+│       ├── storage.py
+│       ├── importer.py
+│       │
+│       └── readers/
+│           ├── __init__.py
+│           ├── csv_reader.py
+│           └── pdf_reader.py
 │
-├── exercises/
-│   └── document_example.py
-│
-├── tests/
 ├── samples/
 │   └── input/
 │
+├── exercises/
+│
 ├── data/
+│   ├── catalogue.json
+│   └── storage/
 │
 ├── pyproject.toml
 ├── uv.lock
 └── README.md
 ```
 
-## Work Completed
+## Technologies Used
 
-### 1. Project Setup
+- **Python 3.13** – Main programming language.
+- **uv** – Python project and dependency management.
+- **argparse** – Command-line interface.
+- **dataclasses** – Document data model.
+- **hashlib** – SHA-256 hashing and duplicate detection.
+- **shutil** – File copying.
+- **JSON** – Persistent document catalogue.
+- **csv** – CSV reading and validation.
+- **pypdf** – PDF text extraction and page handling.
+- **UUID** – Unique document identifiers.
+- **datetime** – UTC import timestamps.
 
-- Created the Python project using `uv`.
-- Configured project details and dependencies in `pyproject.toml`.
-- Set up the source-code directory using the `src` layout.
-- Configured a command-line entry point for the application.
+## Installation and Setup
 
-### 2. Command-Line Interface (CLI)
+### 1. Clone the repository
 
-Implemented the initial CLI structure using Python's `argparse` module.
-
-The application currently supports three commands:
-
-| Command | Purpose |
-|---|---|
-| `docagent import <folder>` | Accepts a folder path for document importing |
-| `docagent list` | Lists documents |
-| `docagent inspect <id>` | Accepts a document ID for inspection |
-
-The commands currently demonstrate argument parsing and command execution. Their actual document-management functionality will be implemented in later stages.
-
-### 3. Document Data Model
-
-Created `models.py` to define the structure of a document using Python's `dataclass`.
-
-The `Document` model contains the following fields:
-
-- `id` – Unique document identifier
-- `original_name` – Original document filename
-- `file_type` – Document format
-- `sha256` – Document content hash
-- `size_bytes` – Document size in bytes
-- `stored_path` – Location of the stored document
-- `status` – Current document status
-- `imported_at` – Document import timestamp
-- `page_count` – Number of pages, when applicable
-
-A `create_document()` function was also implemented to create and return a `Document` object.
-
-### 4. Basic Python Exercise
-
-Created `exercises/document_example.py` to test the document model.
-
-The exercise demonstrates:
-
-- Importing a function from another Python module.
-- Passing values to a function.
-- Creating a dataclass object.
-- Accessing individual object attributes.
-- Printing the complete document object and its properties.
-
-## How to Run
-
-### Run the CLI
-
-Display available commands:
-
-```powershell
-uv run docagent --help
+```bash
+git clone <your-github-repository-url>
+cd document-agent
 ```
 
-Try the import command:
+### 2. Install dependencies
 
-```powershell
-uv run docagent import samples/input/
+```bash
+uv sync
 ```
 
-Try the list command:
+### 3. Run the application
 
-```powershell
+Use the following commands from the project root.
+
+## Available Commands
+
+### Import documents
+
+Import documents from a folder:
+
+```bash
+uv run docagent import samples/input
+```
+
+### List documents
+
+Display all imported documents:
+
+```bash
 uv run docagent list
 ```
 
-Try the inspect command:
+### Inspect a document
 
-```powershell
-uv run docagent inspect 1
+Use the document ID returned by the list command:
+
+```bash
+uv run docagent inspect <document_id>
 ```
 
-### Run the Document Model Exercise
+The inspection displays document metadata and a preview of its contents.
 
-```powershell
-uv run python exercises/document_example.py
+## Document Processing
+
+### CSV Files
+
+The CSV reader:
+
+- Preserves values such as employee IDs with leading zeros.
+- Handles missing cell values.
+- Retains duplicate rows.
+- Detects empty and duplicate column names.
+- Validates inconsistent row lengths.
+- Handles malformed CSV input.
+
+### PDF Files
+
+The PDF reader:
+
+- Extracts text from PDF pages.
+- Calculates the total page count.
+- Identifies pages without extractable text.
+- Detects PDFs with no extractable text and reports that OCR may be needed.
+- Handles corrupted PDF files through import error handling.
+
+**Note:** OCR functionality is not implemented. Image-only PDFs are identified, but their text is not extracted.
+
+## Storage and Duplicate Detection
+
+Imported files are copied into:
+
+```text
+data/storage/
 ```
 
-## Current Progress
+Document metadata is maintained in:
 
-The initial project structure, CLI argument parsing, document data model, and basic Python exercise have been completed.
+```text
+data/catalogue.json
+```
 
-The next development stage is implementing document catalogue persistence and the actual document import, listing, and inspection functionality.
+Each document receives:
+
+- A unique UUID.
+- A SHA-256 content hash.
+- Original filename and file type.
+- File size and storage path.
+- Import status and UTC timestamp.
+- PDF page count, when applicable.
+
+The SHA-256 hash is used to detect duplicate file contents and prevent repeated imports.
+
+## Development and Code Quality
+
+The project uses Python development tools to maintain code quality.
+
+Ruff:
+
+```bash
+uv run ruff check .
+uv run ruff format --check .
+```
+
+Mypy:
+
+```bash
+uv run mypy
+```
+
+Automated tests with pytest are planned as part of the final verification process.
+
+## Future Improvements
+
+- Automated testing with pytest.
+- Improved catalogue error handling.
+- Stronger input and storage path validation.
+- Symbolic link security checks.
+- Additional file-handling edge-case tests.
+- Improved documentation and validation.
+
+## Author
+
+Developed as part of a Python Foundations and Document Tools assignment.
