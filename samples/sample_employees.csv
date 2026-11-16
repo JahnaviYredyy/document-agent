@@ -1,0 +1,7 @@
+employee_id,name,department,email
+00123,Asha,Finance,asha@example.com
+00124,Ravi,,ravi@example.com
+00125,,HR,meera@example.com
+00123,Asha,Finance,asha@example.com
+00126,Kiran,IT,
+00127,Divya,Sales,divya@example.com

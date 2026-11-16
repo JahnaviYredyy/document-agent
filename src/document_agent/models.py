@@ -21,6 +21,7 @@ def create_document(
     file_hash: str,
     size: int,
     stored_path: str,
+    page_count:int | None=None,
 ) -> Document:
 
     return Document(
@@ -32,4 +33,5 @@ def create_document(
         stored_path=stored_path,
         status="imported",
         imported_at=datetime.now(timezone.utc).isoformat(),
+        page_count=page_count,
     )

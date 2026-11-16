@@ -1,38 +1,5 @@
 [
     {
-        "id": "3687e07d-4bd0-48c2-b5b2-f72cea661250",
-        "original_name": "company_policy.txt",
-        "file_type": "txt",
-        "sha256": "abc1123",
-        "size_bytes": 2500,
-        "stored_path": "data/storage/company_policy.txt",
-        "status": "imported",
-        "imported_at": "2026-11-12T11:09:49.670115+00:00",
-        "page_count": null
-    },
-    {
-        "id": "ec429026-1f84-4023-a3e3-cdb90fa8efd4",
-        "original_name": "company_policy.txt",
-        "file_type": "txt",
-        "sha256": "abc1123",
-        "size_bytes": 2500,
-        "stored_path": "data/storage/company_policy.txt",
-        "status": "imported",
-        "imported_at": "2026-11-12T11:13:34.326505+00:00",
-        "page_count": null
-    },
-    {
-        "id": "29dca6a3-e5af-44df-8555-fcdad3a878c9",
-        "original_name": "company_policy.txt",
-        "file_type": "txt",
-        "sha256": "abc1123",
-        "size_bytes": 2500,
-        "stored_path": "data/storage/company_policy.txt",
-        "status": "imported",
-        "imported_at": "2026-11-12T11:15:33.842630+00:00",
-        "page_count": null
-    },
-    {
         "id": "6ac32d0d-7193-4940-b4fb-a6473f7ddc20",
         "original_name": "company_policy.txt",
         "file_type": "txt",
@@ -53,5 +20,93 @@
         "status": "imported",
         "imported_at": "2026-11-13T06:24:30.710865+00:00",
         "page_count": null
+    },
+    {
+        "id": "fa4674c2-1fdd-44cc-a351-b91bf77594d0",
+        "original_name": "employees.csv",
+        "file_type": "csv",
+        "sha256": "7089192c0a6ffe346f382e0ac016e7bb050bca4f400721e38bc6db151561b079",
+        "size_bytes": 91,
+        "stored_path": "C:\\Users\\jahna\\OneDrive\\Desktop\\Document agent\\document-agent\\data\\storage\\7089192c0a6ffe346f382e0ac016e7bb050bca4f400721e38bc6db151561b079_employees.csv",
+        "status": "imported",
+        "imported_at": "2026-11-14T13:09:10.095489+00:00",
+        "page_count": null
+    },
+    {
+        "id": "7170e605-26da-48ca-b5cc-673e57389868",
+        "original_name": "sample_employees.csv",
+        "file_type": "csv",
+        "sha256": "cb99fcca91a922510bb6583558e2a9ebd3b7ff1adbdbbcee7a22ee67f29107cb",
+        "size_bytes": 215,
+        "stored_path": "C:\\Users\\jahna\\OneDrive\\Desktop\\Document agent\\document-agent\\data\\storage\\cb99fcca91a922510bb6583558e2a9ebd3b7ff1adbdbbcee7a22ee67f29107cb_sample_employees.csv",
+        "status": "imported",
+        "imported_at": "2026-11-14T13:09:10.123143+00:00",
+        "page_count": null
+    },
+    {
+        "id": "8b7a08c6-7084-46ee-88b6-7263c62a4b36",
+        "original_name": "sample.pdf",
+        "file_type": "pdf",
+        "sha256": "8e5c59afe3c1ef4bdef2e40c8c204da44ba76f9049580fd657191fa3741eb942",
+        "size_bytes": 28676,
+        "stored_path": "C:\\Users\\jahna\\OneDrive\\Desktop\\Document agent\\document-agent\\data\\storage\\8e5c59afe3c1ef4bdef2e40c8c204da44ba76f9049580fd657191fa3741eb942_sample.pdf",
+        "status": "imported",
+        "imported_at": "2026-11-14T13:43:40.759200+00:00",
+        "page_count": 3
+    },
+    {
+        "id": "6c14f14c-27a7-4d65-964d-45e3b13591a5",
+        "original_name": "no_text.pdf",
+        "file_type": "pdf",
+        "sha256": "1687954190f6d908b760e301a0a529bf840c6e9f486d3462f4931e2c8b701691",
+        "size_bytes": 430,
+        "stored_path": "C:\\Users\\jahna\\OneDrive\\Desktop\\Document agent\\document-agent\\data\\storage\\1687954190f6d908b760e301a0a529bf840c6e9f486d3462f4931e2c8b701691_no_text.pdf",
+        "status": "imported",
+        "imported_at": "2026-11-16T05:50:32.270327+00:00",
+        "page_count": 1
+    },
+    {
+        "id": "e809f81b-2caa-404d-b82a-5470445c5ea4",
+        "original_name": "partial.pdf",
+        "file_type": "pdf",
+        "sha256": "4c675571823aef56965f802e8ce9d7f61933c45ca73921cf46e9d13527cbd0e1",
+        "size_bytes": 3391,
+        "stored_path": "C:\\Users\\jahna\\OneDrive\\Desktop\\Document agent\\document-agent\\data\\storage\\4c675571823aef56965f802e8ce9d7f61933c45ca73921cf46e9d13527cbd0e1_partial.pdf",
+        "status": "imported",
+        "imported_at": "2026-11-16T05:50:32.307922+00:00",
+        "page_count": 4
+    },
+    {
+        "id": "ed615247-8173-4f42-84eb-ff56781b5731",
+        "original_name": "image_only.pdf",
+        "file_type": "pdf",
+        "sha256": "822d1c60d46d7d0bbd6d42a067625647edcf103040eeae9c8b4cdc6a2f69f1a9",
+        "size_bytes": 6997,
+        "stored_path": "C:\\Users\\jahna\\OneDrive\\Desktop\\Document agent\\document-agent\\data\\storage\\822d1c60d46d7d0bbd6d42a067625647edcf103040eeae9c8b4cdc6a2f69f1a9_image_only.pdf",
+        "status": "imported",
+        "imported_at": "2026-11-16T07:01:57.738642+00:00",
+        "page_count": 1
+    },
+    {
+        "id": "61c2f474-260e-4b83-9010-1aae36aa65f9",
+        "original_name": "sample_two_page_text.pdf",
+        "file_type": "pdf",
+        "sha256": "c60766e58faef6dd62641790b53036fd23988818cc1a6707ee45e420b262c580",
+        "size_bytes": 29966,
+        "stored_path": "C:\\Users\\jahna\\OneDrive\\Desktop\\Document agent\\document-agent\\data\\storage\\c60766e58faef6dd62641790b53036fd23988818cc1a6707ee45e420b262c580_sample_two_page_text.pdf",
+        "status": "imported",
+        "imported_at": "2026-11-16T10:36:01.409944+00:00",
+        "page_count": 2
+    },
+    {
+        "id": "23f70be0-9539-4f16-af7a-fa99fe687e15",
+        "original_name": "Sample all.pdf",
+        "file_type": "pdf",
+        "sha256": "b0a8e0494b1248d2428dfe757ee25db86ad8b05ae3131d856ab51afab797fa37",
+        "size_bytes": 399953,
+        "stored_path": "C:\\Users\\jahna\\OneDrive\\Desktop\\Document agent\\document-agent\\data\\storage\\b0a8e0494b1248d2428dfe757ee25db86ad8b05ae3131d856ab51afab797fa37_Sample all.pdf",
+        "status": "imported",
+        "imported_at": "2026-11-16T11:30:48.502995+00:00",
+        "page_count": 3
     }
 ]

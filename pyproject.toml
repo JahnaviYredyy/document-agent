@@ -1,9 +1,7 @@
 [project]
 name = "document-agent"
 version = "0.1.0"
-description = "A Python-based document management tool for 
-               importing, storing, organizing, and inspecting documents 
-               through a command-line interface."
+description = "A Python-based document management tool for importing, storing, organizing, and inspecting documents through a command-line interface."
 readme = "README.md"
 authors = [
     { name = "Jahnavi" }
@@ -21,3 +19,26 @@ docagent = "document_agent.cli:main"
 [build-system]   #How the project is packaged
 requires = ["uv_build>=0.13.7,<0.14.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "mypy>=2.4.1",
+    "ruff>=0.17.5",
+]
+[tool.ruff]
+line-length = 88  #Maximum preferred line length
+target-version = "py313"   #Python version
+
+[tool.ruff.lint]
+select=["E","F","I"]  #E-checks code style errors, F-Finds common programming mistakes, I- Check import organization
+
+[tool.ruff.format]
+quote-style="double"  #uses double quotes
+
+[tool.mypy]
+python_version = "3.13"
+mypath="src"
+files=["src/document_agent"]
+check_untyped_defs=true
+warn_return_any=true
+warn_unused_configs=true
