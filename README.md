@@ -176,18 +176,3 @@ Mypy:
 ```bash
 uv run mypy
 ```
-
-Automated tests with pytest are planned as part of the final verification process.
-
-## Future Improvements
-
-- Automated testing with pytest.
-- Improved catalogue error handling.
-- Stronger input and storage path validation.
-- Symbolic link security checks.
-- Additional file-handling edge-case tests.
-- Improved documentation and validation.
-
-## Author
-
-Developed as part of a Python Foundations and Document Tools assignment.
