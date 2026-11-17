@@ -108,5 +108,27 @@
         "status": "imported",
         "imported_at": "2026-11-16T11:30:48.502995+00:00",
         "page_count": 3
+    },
+    {
+        "id": "d8a495ae-8323-4d68-b55b-00f0bf84583d",
+        "original_name": "FSI-2023-DOWNLOAD.csv",
+        "file_type": "csv",
+        "sha256": "746a76ab05e0459d1252909beb2a7dfe77969399f9bbafbd4465a3e7119220fa",
+        "size_bytes": 13503,
+        "stored_path": "C:\\Users\\jahna\\OneDrive\\Desktop\\Document agent\\document-agent\\data\\storage\\746a76ab05e0459d1252909beb2a7dfe77969399f9bbafbd4465a3e7119220fa_FSI-2023-DOWNLOAD.csv",
+        "status": "imported",
+        "imported_at": "2026-11-17T08:06:50.566908+00:00",
+        "page_count": null
+    },
+    {
+        "id": "71efc6b0-04e5-4d40-94fb-f0f4010ce746",
+        "original_name": "sample-1.md",
+        "file_type": "md",
+        "sha256": "91604974e6aeb9c04087a9a415ae7496ad5c5cbc142b29a0662718adbe476ee8",
+        "size_bytes": 49,
+        "stored_path": "C:\\Users\\jahna\\OneDrive\\Desktop\\Document agent\\document-agent\\data\\storage\\91604974e6aeb9c04087a9a415ae7496ad5c5cbc142b29a0662718adbe476ee8_sample-1.md",
+        "status": "imported",
+        "imported_at": "2026-11-17T08:09:18.826281+00:00",
+        "page_count": null
     }
 ]

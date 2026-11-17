@@ -5,6 +5,7 @@ from pathlib import Path
 
 catalogue_path=Path("data/catalogue.json")
 backup_path=Path("data/catalogue_backup.json")
+
 shutil.copy2(catalogue_path,backup_path)
 documents=json.loads(catalogue_path.read_text(encoding="utf-8"))
 

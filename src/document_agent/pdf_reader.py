@@ -4,7 +4,7 @@ from pypdf import PdfReader
 def read_pdf(file_path:Path)->dict:
     """Extract text from each page of a pdf"""
 
-    reader=PdfReader(file_path)
+    reader=PdfReader(file_path)  #Loads PDF
     pages=[]
     empty_pages=[]
 

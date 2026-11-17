@@ -31,6 +31,6 @@ def read_csv(file_path:Path)->list[dict]:
             f"Invalid number of columns at line {line_number}"
             f"Expected {len(headers)}, got {len(values)}"
           )
-        rows.append(dict(zip(headers,values)))
+        rows.append(dict(zip(headers,values))) #Pairs column names with their values
     
     return rows

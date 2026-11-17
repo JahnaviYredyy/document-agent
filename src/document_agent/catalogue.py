@@ -6,7 +6,7 @@ from document_agent.models import Document
 
 #To stay in the projects data folder even when we run pythons script from different directories
 CATALOGUE_PATH = (Path(__file__).resolve().parents[2]/"data"/"catalogue.json")
-
+#parents[2]-->navigates to the project root in src layout
 
 def load_catalogue() -> list[dict]:
     """Loads previously saved document records from the JSON catalogue."""

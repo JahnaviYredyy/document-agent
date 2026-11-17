@@ -100,7 +100,7 @@ def inspect_document(document_id: str) -> None:
             )
 
         if len(rows) > 5:
-            print("... Preview truncated.")
+            print("... Preview Limited.")
 
     elif file_type == "pdf":
         result = read_pdf(file_path)
