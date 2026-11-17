@@ -176,9 +176,12 @@ Mypy:
 ```bash
 uv run mypy
 ```
+<<<<<<< HEAD
 
 Automated tests with pytest are planned as part of the final verification process.
 
 
 
 
+=======
+>>>>>>> 4872435da45d21d90977bc60c2ad5a3509da58bf
